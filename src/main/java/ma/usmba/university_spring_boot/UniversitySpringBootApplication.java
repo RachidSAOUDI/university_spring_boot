@@ -41,7 +41,7 @@ public class UniversitySpringBootApplication {
             userService.addRoleToUser("admin", "ADMIN");
 
             try {
-                User user = userService.authenticate("user1", "13456");
+                User user = userService.authenticate("user1", "123456");
                 System.out.println(user.getUserId());
                 System.out.println(user.getUsername());
                 System.out.println("Role => ");
